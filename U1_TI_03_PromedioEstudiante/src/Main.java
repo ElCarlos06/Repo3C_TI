@@ -45,25 +45,25 @@ public class Main {
         st5.setNota(3, 75);
         st5.setNota(4, 70);
 
-        System.out.println(st1.getNombre());
-        System.out.println(st1.getMatricula());
-        System.out.println(st1.calcularPromedio());
+        System.out.println("Nombre: "+ st1.getNombre());
+        System.out.println("Matricula: "+ st1.getMatricula());
+        System.out.println("Promedio: "+ st1.calcularPromedio());
         System.out.println(st1.aprobado() + "\n");
-        System.out.println(st2.getNombre());
-        System.out.println(st2.getMatricula());
-        System.out.println(st2.calcularPromedio());
+        System.out.println("Nombre: "+ st2.getNombre());
+        System.out.println("Matricula: "+ st2.getMatricula());
+        System.out.println("Promedio: "+ st2.calcularPromedio());
         System.out.println(st2.aprobado() + "\n");
-        System.out.println(st3.getNombre());
-        System.out.println(st3.getMatricula());
-        System.out.println(st3.calcularPromedio());
+        System.out.println("Nombre: "+ st3.getNombre());
+        System.out.println("Matricula: "+ st3.getMatricula());
+        System.out.println("Promedio: "+ st3.calcularPromedio());
         System.out.println(st3.aprobado() + "\n");
-        System.out.println(st4.getNombre());
-        System.out.println(st4.getMatricula());
-        System.out.println(st4.calcularPromedio());
+        System.out.println("Nombre: "+ st4.getNombre());
+        System.out.println("Matricula: "+ st4.getMatricula());
+        System.out.println("Promedio: "+ st4.calcularPromedio());
         System.out.println(st4.aprobado() + "\n");
-        System.out.println(st5.getNombre());
-        System.out.println(st5.getMatricula());
-        System.out.println(st5.calcularPromedio());
+        System.out.println("Nombre: "+ st5.getNombre());
+        System.out.println("Matricula: "+ st5.getMatricula());
+        System.out.println("Promedio: "+ st5.calcularPromedio());
         System.out.println(st5.aprobado());
     }
 }

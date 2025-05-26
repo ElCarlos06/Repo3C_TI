@@ -30,8 +30,6 @@ public class Student {
     public void setNota(int i, double n) {
         if (i >= 0 && i < notas.length) {
             notas[i] = n;
-        } else {
-            throw new IndexOutOfBoundsException("Índice fuera de rango");
         }
     }
 
