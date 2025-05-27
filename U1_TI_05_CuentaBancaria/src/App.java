@@ -10,7 +10,7 @@ public class App {
         accountBank.depositar(1000);
         accountBank.getSaldo();
 
-        accountBank.retirar(2000);
+        accountBank.retirar(200);
         accountBank.getSaldo();
 
         accountBank.retirar(1000);
