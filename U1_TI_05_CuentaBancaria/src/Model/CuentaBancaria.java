@@ -9,7 +9,7 @@ public class CuentaBancaria {
             saldo += monto;
             System.out.println("Monto ingresado: "+ monto);
         }
-        System.out.println("El saldo es: "+ saldo);
+
     }
 
     public boolean retirar(double monto){
@@ -19,7 +19,6 @@ public class CuentaBancaria {
             System.out.println(accion);
             saldo -= monto; 
             System.out.println("Monto retirado: "+ monto);
-            System.out.println("Saldo restante: "+ saldo);
         } else {
             System.out.println(accion);
             System.out.println("No hay suficiente saldo.");
@@ -28,6 +27,7 @@ public class CuentaBancaria {
     }
 
     public double getSaldo(){
+        System.out.println("Saldo actual: "+ saldo);
         return this.saldo;
         
     }
