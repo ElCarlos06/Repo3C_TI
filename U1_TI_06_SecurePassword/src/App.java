@@ -11,14 +11,11 @@ public class App {
         secureUser.setPassword(password);
 
 
-        if (secureUser.getNombreUsuario() !=null && !nombreUsuario.isEmpty() ) {
-           
+        if (secureUser.getNombreUsuario() !=null && secureUser.getPassword() !=null ) {
             String intenPassword = JOptionPane.showInputDialog("Ingresa la contraseña");
             secureUser.autenticar(intenPassword);
         }else{
             JOptionPane.showMessageDialog(null, "Usuario no valido");
-        
-        
         }
     }
 

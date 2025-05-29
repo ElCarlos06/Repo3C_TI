@@ -38,11 +38,14 @@ public class SecureUser {
             if(digito != true){
                 JOptionPane.showMessageDialog(null, "Debe contener un digito");
             }
-            
+            if (mayuscula == true && minuscula == true && digito == true) {
+                this.password = password;
+            }
 
         }
         
-        this.password = password;
+        
+        
     }
 
     public String getNombreUsuario() {
@@ -54,7 +57,7 @@ public class SecureUser {
     }
 
     public boolean autenticar(String intentPassword){
-            if(intentPassword == password){
+            if(intentPassword.equals(password) ){
                 JOptionPane.showMessageDialog(null, "Acceso concedido.");
                 return true;
             }else {
