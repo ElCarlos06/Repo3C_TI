@@ -16,12 +16,10 @@ public class CuentaBancaria {
         boolean accion = false;
         if (monto > 0 && saldo >= monto) {
             accion = true;
-            System.out.println(accion);
             saldo -= monto; 
-            System.out.println("Monto retirado: "+ monto);
+            System.out.println(accion + ".\t Monto retirado: "+ monto);
         } else {
-            System.out.println(accion);
-            System.out.println("No hay suficiente saldo.");
+            System.out.println(accion + ".\t No hay suficiente saldo.");
         }
         return accion;
     }
