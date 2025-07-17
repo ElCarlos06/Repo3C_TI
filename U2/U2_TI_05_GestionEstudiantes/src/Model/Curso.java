@@ -23,7 +23,7 @@ public class Curso {
 
     public double calcularPromedioGrupo() {
         double suma = 0;
-        for (Estudiante e : inscritos) {
+        for (Estudiante e : inscritos) {  
             if (e != null) {
                 suma += e.getPromedio();
             }

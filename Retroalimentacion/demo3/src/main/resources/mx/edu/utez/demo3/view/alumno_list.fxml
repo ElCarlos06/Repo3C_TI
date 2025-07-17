@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="mx.edu.utez.demo3.controller.AlumnoListController"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/alumno_list.css">
+
+    <top>
+        <HBox fx:id="navbar" styleClass="navbar" spacing="10">
+            <Button fx:id="btnBack" text="Ir a Dashboard"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="10">
+            <Button fx:id="btnCreate" text="Crear alumno" styleClass="nav-btn"/>
+            <TableView fx:id="tableAlumnos" prefWidth="400">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="colNombre" text="INombre" prefWidth="100"/>
+                    <TableColumn fx:id="colApellidos" text="Apellidos" prefWidth="110"/>
+                    <TableColumn fx:id="colFecha" text="Fecha" prefWidth="110"/>
+                    <TableColumn fx:id="colCorreo" text="Correo" prefWidth="110"/>
+                    <TableColumn fx:id="colCarrera" text="Carrera" prefWidth="110"/>
+                    <TableColumn fx:id="colAsignaturas" text="Asigmatura" prefWidth="110"/>
+                    <TableColumn fx:id="colAcciones" text="Acciones" prefWidth="110"/>
+
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+</BorderPane>

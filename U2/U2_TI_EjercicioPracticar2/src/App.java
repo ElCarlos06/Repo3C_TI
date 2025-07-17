@@ -23,7 +23,7 @@ public class App {
         System.out.println("Placa4: "+moto2.getPlaca()+"   Marca: "+moto2.getMarca());
         System.out.println("--------------------------");
         System.out.println("Vehiculos estacionados: "+garage.contarVehiculos());
-        garage.retirar("MT-001");
+        garage.retirar("CH-002");
         System.out.println("Vehiculo retirado.");
         System.out.println("Vehiculos estacionados: "+garage.contarVehiculos());
 
