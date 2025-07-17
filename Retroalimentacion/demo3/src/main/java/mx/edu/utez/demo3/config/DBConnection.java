@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    private static final String URL      = "jdbc:oracle:thin:@ikwpudzu0wic8dcu_low";
+    private static final String URL      = "jdbc:oracle:thin:@ikwpudzu0wic8dcu_high";
     private static final String USER     = "ADMIN";
     private static final String PASSWORD = "29Noviembre2005.";
 

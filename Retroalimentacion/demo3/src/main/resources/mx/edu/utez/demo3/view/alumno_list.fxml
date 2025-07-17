@@ -18,7 +18,7 @@
     </top>
     <center>
         <VBox spacing="10">
-            <Button fx:id="btnCreate" text="Crear alumno" styleClass="nav-btn"/>
+            <Button fx:id="btnCreate" text="Crear alumno" onAction="#onCreateAlumno" styleClass="nav-btn"/>
             <TableView fx:id="tableAlumnos" prefWidth="400">
                 <columns>
                     <TableColumn fx:id="colId" text="ID" prefWidth="50"/>

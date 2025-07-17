@@ -4,6 +4,7 @@ import mx.edu.utez.demo3.config.DBConnection;
 import mx.edu.utez.demo3.dao.IAlumnoDao;
 import mx.edu.utez.demo3.model.Alumno;
 import mx.edu.utez.demo3.model.Asignatura;
+import mx.edu.utez.demo3.model.Carrera;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -65,13 +66,22 @@ public class AlumnoImplDao implements IAlumnoDao {
 
     @Override
     public void create(Alumno alumno) throws SQLException {
-        String sql = "INSERT INTO ALUMNOO (ID,NOMBRE) VALUES (?,?)";
+        String sql = "INSERT INTO \"ADMIN\".\"ALUMNOO\" (NOMBRE, APELLIDOS, CORREO, FECHA_NACIMIENTO, ID_CARRERA) " +
+                "VALUES (?, ?, ?, TO_DATE(?, 'YYYY-MM-DD HH24:MI:SS'), ?)";
+
+
         try {
             Connection con = DBConnection.getConnection();
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1,alumno.getNombre());
-            ps.setString(2,alumno.getApellidos());
-            ps.executeQuery();
+
+            ps.setString(1, alumno.getNombre());
+            ps.setString(2, alumno.getApellidos());
+            ps.setString(3, alumno.getCorreo());
+            ps.setString(4, alumno.getFechaNacimiento().toString() + " 00:00:00");
+            ps.setInt(5, alumno.getIdCarrera());
+
+            ps.executeUpdate();
+
 
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -107,7 +107,7 @@ public class AlumnoListController implements Initializable {
     @FXML
     private void onCreateAlumno(ActionEvent event)  {
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/com/example/school/views/alumno_form.fxml")
+                getClass().getResource("/mx/edu/utez/demo3/view/alumno_form.fxml")
         );
         try{
             Parent root = loader.load();
@@ -117,6 +117,7 @@ public class AlumnoListController implements Initializable {
             dialog.setTitle("Crear Alumno");
             dialog.setScene(new Scene(root));
             dialog.showAndWait();
+            loadAlumnos();
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="mx.edu.utez.demo3.controller.AlumnoFormController"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/alumno_form.css">
+
+    <VBox fx:id="formAlumno" alignment="CENTER" spacing="15" >
+        <VBox fx:id="modalBox" styleClass="modalBox" spacing="15">
+            <TextField fx:id="txtNombre" promptText="Ingresa el nombre en fa " styleClass="form-field" />
+            <TextField fx:id="txtApellido" promptText="Ingresa los apellidos en fa " styleClass="form-field" />
+            <TextField fx:id="txtCorreo" promptText="Ingresa los correo en fa " styleClass="form-field" />
+            <DatePicker fx:id="dpFechaNacimiento" promptText="Selecciona la fecha en fa w" styleClass="form-field"/>
+            <ComboBox fx:id="cbCarrera" promptText="Selecciona la carrera w" styleClass="form-field"/>
+            <HBox alignment="CENTER" spacing="15">
+                <Button fx:id="btnCrear" styleClass="form-btn" onAction="#onSubmit" text="Crear"/>
+                <Button fx:id="btnCancelar" styleClass="form-btn-cancel" onAction="#onCancel" text="Cancelar"/>
+            </HBox>
+        </VBox>
+
+    </VBox>
+</AnchorPane>
